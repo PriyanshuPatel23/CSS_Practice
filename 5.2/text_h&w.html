@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        font-size: 32px;
+      }
+      #test {
+        width: 600px;
+        height: 600px;
+        background-color: red;
+      }
+      #parent {
+        width: 50%;
+        height: 50%;
+        background-color: blue;
+        margin-top: 20px;
+      }
+      #test2 {
+        width: 50%;
+        height: 50%;
+        background-color: green;
+      }
+      #test3 {
+        width: 50vw;
+        height: 50vh;
+        background-color: brown;
+        margin-top: 20px;
+      }
+      #test4 {
+        min-width: 500px;
+        max-width: 20000px;
+        width: 30rem;
+        height: 30rem;
+        font-size: 16px;
+        background-color: aqua;
+      }
+      #child{
+        width: 25em;
+        height: 25em;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="test"></div>
+    <div id="parent">
+      <div id="test2"></div>
+    </div>
+    <div id="test3"></div>
+    <div id="test4">
+      <div id="child"></div>
+    </div>
+  </body>
+</html>
