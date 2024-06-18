@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        p{
+            width: fit-content;
+            position: relative;
+        }
+        p::after{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            content: '';
+            height: 3px;
+            width: 100%;
+            background-color: red;
+        }
+        p::first-letter{
+            font-size: 5vw;
+        }
+        p::first-line{
+            color: red;
+        }
+        p::selection{
+            color: green;
+        }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laudantium et
+      debitis itaque eaque id dolore error cupiditate consequuntur molestiae,
+      laboriosam ducimus aperiam blanditiis, cum earum voluptates. Modi, at
+      reprehenderit.
+    </p>
+  </body>
+</html>
